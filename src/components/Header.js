@@ -4,7 +4,7 @@ import { FiSun } from 'react-icons/fi';
 
 
 
-function Header({ title }) {
+const Header = ({ title }) => {
     return (
         <header className='header'>
         <h1><FiSun size={50} className='react-icons logo' /> {title}</h1>

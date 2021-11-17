@@ -26,8 +26,8 @@ body {
   border: 1px solid steelblue;
 }
 
-.react-icons {
-  vertical-align:text-bottom;
+[class*="icons"] {
+  vertical-align:middle ;
 }
 
 .header {
@@ -72,15 +72,32 @@ h1 {
   min-width: 100%;
   color: #fff;
   padding: 10px;
-  border: 2px solid black ;
+  /* border: 2px solid black ; */
   border-radius: 5px;
 } 
+
+.search-box.blackBorder{
+  border: 2px solid black ;
+}
+
+.search-box.redBorder{
+  border: 2px solid red;
+}
 
 .search-city-form-main input{
   border:none;
   border-bottom: 1px solid lightgray;
   min-width: 92%;
   font-size: 0.8em;
+  outline: none;
+}
+
+/* .search-city-form-main input:focus{
+  outline: none;
+} */
+
+.input * :active{
+  outline: none;
 }
 
 .btn {
@@ -93,6 +110,21 @@ h1 {
 .search-box  .btn{
   padding-left: 10px;
 }
+
+.incorrectCityName {
+  display: block;
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: medium;
+  color: red;
+}
+
+.weather-icon {
+  vertical-align:baseline;
+  vertical-align:-webkit-baseline-middle;
+}
+
 
 footer {
     flex-shrink: 0;
