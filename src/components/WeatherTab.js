@@ -50,7 +50,7 @@ const WeatherTab = ({ date, temp, desc, icon}) => {
             <div className='inner-block' style={{width: "10%"}}>
                 <img
                     src={`http://openweathermap.org/img/w/${icon}.png`}
-                    alt="weather status icon"
+                    alt=""
                     className="weather-icon"
                 />
             </div>
