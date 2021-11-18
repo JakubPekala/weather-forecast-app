@@ -2,17 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background-color: #c5e0f9; */
-  background-color: white;
-}
-
-body {
-  margin: 0;
+  background-color: #c5e0f9;
 }
 
 .container {
   text-align: center;
-  /* justify-content: center; */
   display: flex;
   flex-direction: column;
 
@@ -23,7 +17,7 @@ body {
   overflow: auto;
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid steelblue;
+  /* border: 1px solid steelblue; */
 }
 
 [class*="icons"] {
@@ -35,6 +29,7 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
   font-size:xx-large;
+  color: #00305d;
 }
 
 .logo {
@@ -49,13 +44,15 @@ h1 {
 
 .main {
   flex-grow: 1;
+  margin-top: 50px;
 }
 
 .search-city-form-main {
   display: inline-block;
   vertical-align: middle; 
   min-width: 55%;
-  margin-top: 100px;
+  max-width: 70%;
+  margin-bottom: 50px;
   font-size: x-large;
 }
 
@@ -72,7 +69,6 @@ h1 {
   min-width: 100%;
   color: #fff;
   padding: 10px;
-  /* border: 2px solid black ; */
   border-radius: 5px;
 } 
 
@@ -92,22 +88,17 @@ h1 {
   outline: none;
 }
 
-/* .search-city-form-main input:focus{
-  outline: none;
-} */
-
 .input * :active{
   outline: none;
 }
 
-.btn {
+.btn.inline{
   display: inline-block;
   color: #fff;
   border: none;
-
 }
 
-.search-box  .btn{
+.search-box .btn{
   padding-left: 10px;
 }
 
@@ -120,11 +111,72 @@ h1 {
   color: red;
 }
 
-.weather-icon {
-  vertical-align:baseline;
-  vertical-align:-webkit-baseline-middle;
+.weather-tabs {
+  display: inline-block;
+  vertical-align: middle; 
+  text-align: left;
+  min-width: 60%;
+  width: 75%;
+  margin-bottom: 50px;
+  font-size: x-large;
 }
 
+.weather-tabs .intro{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: stretch;
+  min-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+.react-icons.sun-sets{
+  margin-left: 20px;
+  vertical-align: middle;
+  color: #00305d;
+}
+
+.weather-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-right: 6%;
+  min-height: 60px;
+  margin-bottom: 10px;
+  border: 2px solid #00305d;
+  border-radius: 10px;
+  font-size: large;
+} 
+
+.weather-tab .inner-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+
+.btn.back{
+  display: inline-block;
+  align-self: flex-end;
+  background: #00305d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 5px;
+
+  text-decoration: none;
+  font-size: large;
+}
 
 footer {
     flex-shrink: 0;
