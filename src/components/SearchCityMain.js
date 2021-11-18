@@ -45,7 +45,7 @@ const SearchCityMain = ({ onSearch }) => {
                     }}
                 />
                 <button type='submit' className='btn inline'>
-                    <BsSearch style={{color:'black'}}/>
+                    <BsSearch size={18} style={{color:'black'}}/>
                 </button>
             </div> 
             {!properCityName && <p className='incorrectCityName'>Please enter proper city name</p>}
