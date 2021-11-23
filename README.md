@@ -1,8 +1,10 @@
 # Weather forecast
 
-This project is a sample application created as recruitment task for Linkfactory company, for a position of frontend developer (junior/mid).
+This project is a sample application created as recruitment task for a position of frontend developer (junior/mid).
 
 Its main goal is to display weather forecast for city given by user. 
+
+Online wroking version is available under link: https://weather-forecast-jpekala.herokuapp.com
 
 ## Technicalities
 
